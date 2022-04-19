@@ -1,5 +1,10 @@
 import time
+import key
 from ctypes import POINTER, c_ulong, Structure, c_ushort, c_short, c_long, byref, windll, pointer, sizeof, Union
+
+# key是键码，需要下载使用，可以在github下载，地址为https://github.com/xvbowen2012/presskey
+# Key is the key code, which needs to be downloaded and used. 
+# It can be downloaded from GitHub at https://github.com/xvbowen2012/presskey
 
 SendInput = windll.user32.SendInput
 PUL = POINTER(c_ulong)
